@@ -794,8 +794,8 @@
       ]
     },
     "/Users/aolin/Projects/demo-solidity/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1634278947551,
-      "contentHash": "2cd550cedf51b8d294607dad5023d717",
+      "lastModificationDate": 1634280812060,
+      "contentHash": "a083ccfbab76911ba3612536c421c565",
       "sourceName": "contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -3436,42 +3436,6 @@
       ],
       "artifacts": [
         "IERC3156FlashLender"
-      ]
-    },
-    "/Users/aolin/Projects/demo-solidity/contracts/token/ERC20/extensions/ERC20Capped.sol": {
-      "lastModificationDate": 1634278947560,
-      "contentHash": "1ef9bb98be133f0008af98b4700b9e95",
-      "sourceName": "contracts/token/ERC20/extensions/ERC20Capped.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../ERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ERC20Capped"
       ]
     },
     "/Users/aolin/Projects/demo-solidity/contracts/metatx/MinimalForwarder.sol": {

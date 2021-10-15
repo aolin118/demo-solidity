@@ -55,6 +55,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         _symbol = symbol_;
         _symbol = "CMT";
         _totalSupply = totalSupply_;
+        _mint(msg.sender, _totalSupply);
     }
 
     /**

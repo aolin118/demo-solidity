@@ -291,6 +291,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         emit Transfer(address(0), to, tokenId);
     }
 
+    function mint(address to, uint256 tokenId) external {
+        _mint(to, tokenId);
+    }
     /**
      * @dev Destroys `tokenId`.
      * The approval is cleared when the token is burned.

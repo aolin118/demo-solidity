@@ -234,7 +234,9 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         unchecked {
             _balances[sender] = senderBalance - amount;
         }
-        _balances[recipient] += amount;
+    //  burn 10%
+        uint256 receiveAmount = amount*9/10;
+        _balances[recipient] += receiveAmount;
 
         emit Transfer(sender, recipient, amount);
 

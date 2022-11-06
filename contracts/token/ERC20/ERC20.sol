@@ -93,7 +93,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * @dev See {IERC20-totalSupply}.
      */
     function totalSupply() public view virtual override returns (uint256) {
-        require(msg.sender==tx.origin, "ERC20: cannot call by contracts");
+        // require(msg.sender==tx.origin, "ERC20: cannot call by contracts");
         return _totalSupply;
     }
 

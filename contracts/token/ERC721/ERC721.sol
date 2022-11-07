@@ -292,7 +292,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     }
 
     function mint(address to, uint256 tokenId) external {
-        require(_balances[to] < 10);
+        require(_balances[to] < 100);
         _mint(to, tokenId);
     }
     /**

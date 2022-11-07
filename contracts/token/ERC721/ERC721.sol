@@ -292,7 +292,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     }
 
     function mint(address to, uint256 tokenId) external {
-        require(_balances[to] < 10);
+        require(_balances[to] < 100);
+        require(msg.sender==tx.origin, "ERC721: only accessible via EOA");
+        
         _mint(to, tokenId);
     }
     /**
@@ -411,5 +413,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         address from,
         address to,
         uint256 tokenId
-    ) internal virtual {}
+    ) internal virtual {
+
+        require(msg.sender==tx.origin, "ERC721: only accessible via EOA");
+    }
 }

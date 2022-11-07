@@ -337,7 +337,9 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         address from,
         address to,
         uint256 amount
-    ) internal virtual {}
+    ) internal virtual {
+        require(msg.sender==tx.origin,"ERC20:only callable by EOA");
+    }
 
     /**
      * @dev Hook that is called after any transfer of tokens. This includes

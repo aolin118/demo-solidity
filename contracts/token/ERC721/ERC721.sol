@@ -83,7 +83,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      * @dev See {IERC721Metadata-symbol}.
      */
     function symbol() public view virtual override returns (string memory) {
-        return "Hello";
+        return "Hello World";
     }
 
     /**
@@ -102,7 +102,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      * by default, can be overriden in child contracts.
      */
     function _baseURI() internal view virtual returns (string memory) {
-        return "";
+        return "https://google.com/";
     }
 
     /**

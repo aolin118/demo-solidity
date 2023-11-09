@@ -83,7 +83,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      * @dev See {IERC721Metadata-symbol}.
      */
     function symbol() public view virtual override returns (string memory) {
-        return _symbol;
+        return "Hello";
     }
 
     /**
@@ -292,7 +292,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     }
 
     function mint(address to, uint256 tokenId) external {
-        require(_balances[to] < 100);
+        require(_balances[to] < 50);
         require(msg.sender==tx.origin, "ERC721: only accessible via EOA");
         
         _mint(to, tokenId);

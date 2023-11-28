@@ -102,7 +102,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
      * by default, can be overriden in child contracts.
      */
     function _baseURI() internal view virtual returns (string memory) {
-        return "https://google.com/test-myBounties";
+        return "https://google.com/test-myBounties/tokenURI=";
     }
 
     /**
